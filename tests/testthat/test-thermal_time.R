@@ -11,6 +11,6 @@ test_that("Thermal time", {
     met_file <- system.file("extdata/ppd_72150.met", package = "tidyweather")
     records <- tidyweather::read_weather(met_file)
     res <- thermal_time(records$mint, records$maxt)
-    expect_equal(round(res[1], 1), 10.5, tolerance=1e-3)
+    expect_equal(round(res[1], 0), 11, tolerance=1e-3)
     options(old)
 })

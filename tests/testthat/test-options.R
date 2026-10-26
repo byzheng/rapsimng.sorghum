@@ -1,7 +1,7 @@
 
 test_that("get returns correct default values", {
-    expect_equal(sorghum$get("phenology.thermal_time.x"), c(0, 26, 37))
-    expect_equal(sorghum$get("phenology.thermal_time.y"), c(0, 26, 0))
+    expect_equal(sorghum$get("phenology.thermal_time.x"), c(11, 30, 42))
+    expect_equal(sorghum$get("phenology.thermal_time.y"), c(0, 19, 0))
     expect_equal(sorghum$get("phenology.thermal_time.method"), "3hr")
 })
 
@@ -32,6 +32,7 @@ test_that("set enforces group validation", {
 
 test_that("reset restores defaults", {
     sorghum$reset()
-    expect_equal(sorghum$get("phenology.thermal_time.x"), c(0, 26, 37))
-    expect_equal(sorghum$get("phenology.thermal_time.y"), c(0, 26, 0))
+    expect_equal(sorghum$get("phenology.thermal_time.x"), c(11, 30, 42))
+    expect_equal(sorghum$get("phenology.thermal_time.y"), c(0, 19, 0))
+    expect_equal(sorghum$get("phenology.thermal_time.method"), "3hr")
 })

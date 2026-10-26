@@ -36,8 +36,8 @@ sorghum <- optree::create_options_manager(
     defaults = list(
         phenology = list(
             thermal_time = list(
-                x = c(0, 26, 37),
-                y = c(0, 26, 0),
+                x = c(11, 30, 42),
+                y = c(0, 19, 0),
                 method = "3hr"
             )
         )

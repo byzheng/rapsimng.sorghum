@@ -16,7 +16,7 @@
 #' @examples 
 #' mint <- c(0, 10)
 #' maxt <- c(30, 40)
-#' thermal_time(maxt, mint)
+#' thermal_time(mint, maxt)
 thermal_time <- function(mint, 
         maxt,
         x_temp = sorghum$get("phenology.thermal_time.x"), 

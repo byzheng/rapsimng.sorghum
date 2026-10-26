@@ -37,5 +37,5 @@ For more information about the sorghum phenology model, see the
 \examples{
 mint <- c(0, 10)
 maxt <- c(30, 40)
-thermal_time(maxt, mint)
+thermal_time(mint, maxt)
 }
